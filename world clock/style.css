@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+}
+
+.clock-container{
+    text-align:center;
+
+    padding:40px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.2);
+
+    color:white;
+}
+
+.clock-container h1{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.clock{
+    font-size:5rem;
+    font-weight:bold;
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+
+    text-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+
+#date{
+    margin-top:20px;
+    font-size:1.2rem;
+    letter-spacing:1px;
+}
+
+@media(max-width:600px){
+
+    .clock{
+        font-size:3rem;
+    }
+
+    .clock-container{
+        width:90%;
+    }
+
+    .clock-container h1{
+        font-size:1.5rem;
+    }
+}
